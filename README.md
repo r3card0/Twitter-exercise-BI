@@ -19,7 +19,7 @@ It's required to:
 
 This must be done in Power BI or Tableau. No other tool is accepted.
 
-## Part B - Data modeling
+# Part B - Data modeling
 
 PLEASE VERIFY WITH YOUR RECRUITER IF YOU ARE REQUIRED TO SOLVE THIS SECTION.
 
@@ -37,3 +37,18 @@ In this model, please consider the following:
 2. We need to keep historical changes. At least, for the User dimension, we must keep track of the historical change of the User attributes. For example, an user may change its display name,  but it remains the same user. 
 
 3. (Bonus Question) Besides a transactional fact table, propose a fact that facilitates the snapshot of total tweets count in a weekly basis.
+
+# Outline
+## Introduction
+As a data analyst, D&AI Studio requires to analyze and determine which Twitter user could be the best candidate creating the relevance KPI from the "retweets" and "favorites" measures. Then, replicate the reference dashboard described on [Part A](/README.md#part-a---dashboard)
+## Workflow
+The process to accomplish this assigment will be as this after download the dataset: 
+- Read the data set with Jupyter notebooks to perform data gathering and transformation process
+- Then start a preliminary data analysis and create some charts related to reference dashboard
+- Iterate serverals scenarios to figure out what is the best one for this solution
+## Data Gathering & Transformation
+## Data Analysis
+## Dashboard
+## Data Modeling
+## Recomendation
+## Conclusion
