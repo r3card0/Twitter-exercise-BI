@@ -1,6 +1,8 @@
 # Twitter - BI exercise 📊
 
-![Reference Dashboard](/img/referencedashboard.png)
+[Tableau Dashboard](https://public.tableau.com/app/profile/ricardosaldivar/viz/ConferenceCandidates/Dashboard1?publish=yes)
+
+![Candidates Viz](/img/CandidatesViz.png)
 
 # Part A - Dashboard
 It's required to:
@@ -49,6 +51,7 @@ The process to accomplish this assigment will be as this after download the data
 ## Data Gathering & Transformation
 ## Data Analysis
 ## Dashboard
+[Tableau Dashboard](https://public.tableau.com/app/profile/ricardosaldivar/viz/ConferenceCandidates/Dashboard1?publish=yes)
 ## Data Modeling
 ## Recomendation
 ## Conclusion
