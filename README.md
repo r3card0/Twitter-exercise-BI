@@ -49,9 +49,53 @@ The process to accomplish this assigment will be as this after download the data
 - Then start a preliminary data analysis and create some charts related to reference dashboard
 - Iterate serverals scenarios to figure out what is the best one for this solution
 ## Data Gathering & Transformation
-## Data Analysis
+In this step it was implemented the notebook [Data Gathering & Transformation](/Data_Gathering-Transformation.ipynb).
+
+It's required to install the pandas and matplotlib libraries
+```
+conda install pandas
+```
+
+To visualice the distribution of the tweets geographically, it's required to install geopandas library to display the location geometry
+
+```
+conda install geopandas
+```
+Once installed, it can be calculated the geometry from coordinates data such as latitude and longitude
+
 ## Dashboard
-[Tableau Dashboard](https://public.tableau.com/app/profile/ricardosaldivar/viz/ConferenceCandidates/Dashboard1?publish=yes)
+Once the data set was normalized, it was loaded to Tableau to create the required dashboard and it can be visualized clicking on: [Tableau Dashboard](https://public.tableau.com/app/profile/ricardosaldivar/viz/ConferenceCandidates/Dashboard1?publish=yes)
+
+## Data Analysis
+
+The data analysis comes with the next outcomes and it can be reviewed on the next notebook:[Data Analysis](/DataAnalysis.ipynb)
+
+* This data set contians 1726 tweets, created by 1516 users
+* 1073 tweets are retweets and they represent the 62% of the total
+* 653 are not retweets and they represent the 38% of the total
+* Time period of time is from August 1, 2021 to August, 31 2021. Tweets of 31 days
+* There were created 55 tweets in average by day
+* 79 tweets were created at 2021-08-20. This is the maximum by day
+* 43 tweets were created at 2021-08-07. This is the minimum by day
+* The most languages used on the tweets are: English(491), Spanish(479), Italian(442) and French(312), and there is one tweet in Portuguese and one tweet in Wales
+* The tweets are coming from 41 countries, where Philipines, contributed with 222 tweets and representing the 12% of the total.
+* The tweets are comming from two sources, users and bots and 1636 tweets (94.79%), coming from users and 90 tweets (5.21%), coming from bots 
+
+
+
+
 ## Data Modeling
-## Recomendation
+![modeling](/img/dataModeling.png)
+
+For data modeling was proposed the model of the image.
+
+The object TWEET was taken as a fact table, because around this object are relationships betweet the tweet and the other attributes contained on the CSV file, such as User, Sentiment, Source, Language, Counts, etc. **This is a snowflake schema ❄️** . For me, this schema helps to track the historical changes of the User attributes and also the location attributes can be mapped correctly, such as latitutde and longitude coordinates, that both belong to a city and a city belongs to a country. This location data coming from the CSV file.
+
 ## Conclusion
+### Part A
+* There is a data set of 1726 tweets in a period of time from August 1st to 31. There were unvolved 1516 users from 41 countries and for four languages. The most of tweets came from users, because there are bots too. The attributes retweets and favorite, showed the relevance of the tweets. 
+
+### Part B
+* A snowflake schema it's more effective to track the attributes from the Tweet, User and locations.
+
+* The object Tweet was defined as a fact table
